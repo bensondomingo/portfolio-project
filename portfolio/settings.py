@@ -25,10 +25,7 @@ SECRET_KEY = 'gl8mufqt^wuejpy7ktx0hfjsyy9nl)8jbq0x@)3#xpv*m$0nlo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '192.168.137.1',
-    'localhost'
-]
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -39,8 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jobs.apps.JobsConfig',
-    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +77,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfoliodb',
         'USER': 'postgres',
-        'PASSWORD': '1234',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5433',
     }
